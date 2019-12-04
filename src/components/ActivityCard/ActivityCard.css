@@ -1,0 +1,11 @@
+.activity-card {
+    width: 30%;
+    min-width: 180px;
+    height: 40vh;
+    border: 1px black solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+}

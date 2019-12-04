@@ -1,0 +1,49 @@
+.sub-goal-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sub-goal-card {
+    margin: .5rem;
+    width: 30%;
+    min-width: 380px;
+    height: 30vh;
+    border-radius: 2rem;
+    display: flex;
+    cursor: pointer;
+    /* justify-content: space-around; */
+}
+
+.sub-goal-card__halfdiv {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-goal-card__icon {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.sub-goal-card__title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+
+}
+
+.sub-goal-card__subtitle {
+    color: white;
+    font-size: 1rem;
+}
+
+.chartText {
+    position: absolute;
+}
