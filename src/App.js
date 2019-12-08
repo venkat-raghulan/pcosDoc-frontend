@@ -4,9 +4,13 @@ import "./App.css";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import BackDrop from "./components/BackDrop/BackDrop";
 import "typeface-roboto";
-// import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 import ActivityCard from "./components/ActivityCard/ActivityCard";
-import SubGoalCardContainer from "./components/SubGoalCard/SubGoalCardContainer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Switch, Route } from "react-router-dom";
+import MyGoals from "./views/MyGoals";
+import Home from "./LandingPage/index";
 
 export default class App extends Component {
   state = {
@@ -23,6 +27,8 @@ export default class App extends Component {
     this.setState({ sideDrawerOpen: false });
   };
 
+  notify = () => toast("Wow so easy !");
+
   render() {
     let backDrop;
     if (this.state.sideDrawerOpen) {
@@ -35,13 +41,18 @@ export default class App extends Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
 
-        <main className="page-content">
-          {/* <Button variant="contained" color="primary">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/mygoals" component={MyGoals} />
+        </Switch>
+
+        {/* <main className="page-content">
+          <ToastContainer />
+          <Button variant="contained" color="primary" onClick={this.notify}>
             Hello World
-          </Button> */}
-          <SubGoalCardContainer />
+          </Button>
           <ActivityCard />
-        </main>
+        </main> */}
       </div>
     );
   }

@@ -19,7 +19,16 @@ let subGoalCardList = [
     subtitle: "1600 Calories",
     numerator: 3,
     denominator: 10,
-    iconName: "faBars"
+    iconName: "faUtensils"
+  },
+  {
+    gradColor1: "#19D191",
+    gradColor2: "#39FB90",
+    title: "Sleep",
+    subtitle: "10 hours",
+    numerator: 3,
+    denominator: 10,
+    iconName: "faMoon"
   }
 ];
 

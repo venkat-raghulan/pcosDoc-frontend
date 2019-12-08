@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navmenu.css";
+import { Link, NavLink } from "react-router-dom";
 
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,18 +16,18 @@ export default function Navmenu(props) {
         />
 
         <div className="navmenu__logo">
-          <a href="/">
+          <NavLink to="/">
             <span>PCOS</span> Clinic
-          </a>
+          </NavLink>
         </div>
         <div className="spacer"></div>
         <div className="navmenu__items">
           <ul>
             <li>
-              <a href="/">Item 1</a>
+              <NavLink to="/mygoals">My Goals</NavLink>
             </li>
             <li>
-              <a href="/">Item 2</a>
+              <NavLink to="/">Login/Signup</NavLink>
             </li>
           </ul>
         </div>

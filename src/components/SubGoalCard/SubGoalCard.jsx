@@ -3,7 +3,11 @@ import "./SubGoalCard.css";
 import styled from "styled-components";
 import DonutChart from "./DonutChart";
 
-import { faRunning, faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faRunning,
+  faUtensils,
+  faCloudMoon
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SubGoalCard({ cardData }) {
@@ -16,13 +20,24 @@ export default function SubGoalCard({ cardData }) {
       <div className="sub-goal-card__halfdiv">
         <FontAwesomeIcon
           className="sub-goal-card__icon"
-          icon={cardData.iconName === "faBars" ? faBars : faRunning}
+          icon={
+            cardData.iconName === "faUtensils"
+              ? faUtensils
+              : cardData.iconName === "faMoon"
+              ? faCloudMoon
+              : faRunning
+          }
         />
         <p className="sub-goal-card__title">{cardData.title}</p>
         <p className="sub-goal-card__subtitle">{cardData.subtitle}</p>
       </div>
       <div className="sub-goal-card__halfdiv">
-        <p className="chartText">Bqlq</p>
+        <p className="sub-goal-card__halfdiv__chartText">
+          <span className="sub-goal-card__halfdiv__chartText__text1">
+            {cardData.numerator}
+          </span>
+          /{cardData.denominator + cardData.numerator}
+        </p>
 
         <DonutChart
           className="doughnut-text"

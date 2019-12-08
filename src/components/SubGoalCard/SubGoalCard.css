@@ -3,12 +3,13 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 64px;
 }
 
 .sub-goal-card {
     margin: .5rem;
     width: 30%;
-    min-width: 380px;
+    min-width: 350px;
     height: 30vh;
     border-radius: 2rem;
     display: flex;
@@ -44,6 +45,14 @@
     font-size: 1rem;
 }
 
-.chartText {
+.sub-goal-card__halfdiv__chartText {
     position: absolute;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+}
+
+.sub-goal-card__halfdiv__chartText__text1 {
+    font-weight: bolder;
+    font-size: 2rem;
 }
