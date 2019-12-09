@@ -1,7 +1,7 @@
-import React from "react";
-import QueueAnim from "rc-queue-anim";
-import TweenOne from "rc-tween-one";
-import { getChildrenToRender } from "./utils";
+import React from 'react';
+import QueueAnim from 'rc-queue-anim';
+import TweenOne from 'rc-tween-one';
+import { getChildrenToRender } from './utils';
 
 class Banner5 extends React.PureComponent {
   render() {
@@ -10,13 +10,13 @@ class Banner5 extends React.PureComponent {
     delete tagProps.dataSource;
     delete tagProps.isMobile;
     const animType = {
-      queue: "bottom",
+      queue: 'bottom',
       one: {
-        y: "+=30",
+        y: '+=30',
         opacity: 0,
-        type: "from",
-        ease: "easeOutQuad"
-      }
+        type: 'from',
+        ease: 'easeOutQuad',
+      },
     };
     return (
       <div {...tagProps} {...dataSource.wrapper}>
@@ -25,11 +25,11 @@ class Banner5 extends React.PureComponent {
             key="text"
             type={animType.queue}
             leaveReverse
-            ease={["easeOutQuad", "easeInQuad"]}
+            ease={['easeOutQuad', 'easeInQuad']}
             {...dataSource.childWrapper}
             componentProps={{
               md: dataSource.childWrapper.md,
-              xs: dataSource.childWrapper.xs
+              xs: dataSource.childWrapper.xs,
             }}
           >
             {dataSource.childWrapper.children.map(getChildrenToRender)}

@@ -509,37 +509,62 @@ export const Content90DataSource = {
     ],
   },
 };
-export const Content130DataSource = {
-  OverPack: {
-    className: 'home-page-wrapper content13-wrapper',
-    playScale: 0.3,
+export const Pricing00DataSource = {
+  wrapper: { className: 'home-page-wrapper pricing0-wrapper' },
+  OverPack: { playScale: 0.3, className: 'home-page pricing0' },
+  imgWrapper: { className: 'pricing0-img-wrapper', md: 12, xs: 24 },
+  img: {
+    className: 'pricing0-img',
+    name: 'image',
+    children:
+      'http://www.bellaroccawellness.com/_Media/62517604_m-1-f73c8932_med_hr.png',
   },
-  titleWrapper: {
-    className: 'title-wrapper',
+  childWrapper: {
+    className: 'pricing0-text-wrapper',
+    md: 12,
+    xs: 24,
     children: [
-      {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
-        className: 'title-image',
-      },
       {
         name: 'title',
         children: (
           <>
-            <p>Join the community Now!</p>
+            <p>Join the community NOW!</p>
           </>
         ),
-        className: 'title-h1',
+        className: 'pricing0-title',
       },
       {
         name: 'content',
         children: (
           <>
-            <p>Take charge of the rest of your life.</p>
+            <p>Take charge of your life.</p>
           </>
         ),
-        className: 'title-content',
+        className: 'pricing0-content',
+      },
+      {
+        name: 'title~k3y43yw4c6j',
+        className: '',
+        children: (
+          <>
+            <p>
+              <br />
+            </p>
+          </>
+        ),
+      },
+      {
+        name: 'button~k3y45w6odl',
+        className: '',
+        children: {
+          children: (
+            <>
+              <p>Signup</p>
+            </>
+          ),
+          href: '#',
+          type: 'default',
+        },
       },
     ],
   },

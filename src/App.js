@@ -4,13 +4,13 @@ import "./App.css";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import BackDrop from "./components/BackDrop/BackDrop";
 import "typeface-roboto";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import ActivityCard from "./components/ActivityCard/ActivityCard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Switch, Route } from "react-router-dom";
 import MyGoals from "./views/MyGoals";
-import Home from "./LandingPage/index";
+import Home from "./LandingPage";
 
 export default class App extends Component {
   state = {
